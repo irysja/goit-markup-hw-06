@@ -749,8 +749,8 @@ footer {
   transform: translate(-50%,-50%);
   width: 408px;
   height: 576px;
-  background-color: #E7E9FC;
-  padding: 24px;
+  background-color: var(--primary-color-white);
+  padding: 72px 24px 24px;
 }
 .modal-close-btn{
   position: absolute;
@@ -803,7 +803,7 @@ footer {
 /*====== MODAL FORM =======*/
 
 .modal-form-text{
-  margin-top: 24px;
+  /*margin-top: 24px;*/
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -813,7 +813,7 @@ footer {
   color: var(--primary-color-dark-gray);
 }
 .modal-form{
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
 }
 .modal-form-field{
@@ -821,6 +821,8 @@ footer {
 }
 .modal-form-input-desc{
   display: block;
+  margin-top: 8px;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -928,6 +930,7 @@ footer {
 
 .modal-form-submit{
   width: 169px;
+  margin-left: 94px;
   height: 56px;
   left: 635px;
   top: 584px;
@@ -969,12 +972,17 @@ footer {
 }
 .modal-form-input-footer{
   width: 264px;
+  color: var(--primary-color-white);
   height: 40px;
   border: 1px solid var(--color-light-gray);
   border-radius: 4px;
   padding-left: 16px;
   background-color: var(--primary-color-dark-gray);
   transition: border-color  var(--transition) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input-footer:hover,
+.modal-form-input-footer:focus {
+  outline: none;
 }
 .modal-form-input-wrapper-footer{
   font-size: 12px;
@@ -984,6 +992,11 @@ footer {
 
 .modal-form-submit-footer{
   margin-left: 16px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   background: var(--primary-color-blue);
   font-size: 16px;
   width: 165px;
@@ -998,11 +1011,17 @@ footer {
   background-position: right;
   background-repeat: no-repeat;*/
 }
+
 .modal-form-submit-footer:hover,
 .modal-form-submit-footer:focus {
-  color: var(--color-navy);
-  transition: transform 250ms linear;
   color: var(--primary-color-white);
+  background: var(--color-navy);
+}
+.modal-form-submit-footer:hover,
+.modal-form-submit-footer:focus {
+ /* color: var(--color-navy);*/
+  fill: white;
+  transition: transform 250ms linear;
 }
 .modal-form-input-desc-footer{
   display: block;
@@ -1014,7 +1033,7 @@ footer {
 }
 .modal-footer{
   width: 100%;
-  padding-left: 80px;
+  margin-left: 80px;
 }
 .modal-close-btn-icon-footer{
   display: block;
@@ -1029,5 +1048,5 @@ footer {
 }
 
 .modal-form-input-icon-footer {
-  transform: translate(10px, 5px);
+  /*transform: translate(10px, 5px);*/
 }
